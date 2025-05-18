@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    font-family: "Poppins", sans-serif;
+  }
+html{
+  scroll-behavior: smooth;
+}
+ .end-content{
+  
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:gray;
+  border-width: 3px;
+ }
+.img2{
+  background-color:rgba(255, 255, 255, 0.493);
+  border-radius: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  height:55px;
+  left: 0;
+  background: black;
+  /* backdrop-filter: saturate(200%) blur(20px); */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5px;
+  z-index: 10;
+  color: whitesmoke;
+}
+.nav-links{  
+  display: flex;
+  align-items: center;
+}
+.nav-links  li a{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  
+}
+
+.active {
+  border: 2px solid rgba(245, 245, 245, 0.932);
+  border-radius: 20px;
+  
+}
+.cir_border {
+    padding: 6px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0px 4px;
+    margin-inline-end: 10px ;
+}
+a {
+    text-decoration: none;
+}
+/* MAIN */
+
+/* bACKGROUND */
+.mainpage{
+  
+  height:500px;
+  width: 100%;
+  background: url(C:/Users/Dell/Desktop/krrish/wanderwise/images/packages/WanderWorld.jpg) no-repeat;
+  /* background-repeat: no-repeat; */
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  
+}
+.content{
+  margin-left: 80px;
+  margin-bottom: 30px;
+  
+  text-align:left;
+  vertical-align:bottom;
+}
+.content p{
+  font-size: 30px;
+  padding: 5px;
+}
+
+.content h1{
+  font-size: 50px;
+  padding: 5px;
+}
+.content input{
+  font-size: 20px;
+  width: 900px;
+  padding: 10px 20px 10px 40px;
+  border-radius: 10px;
+  border:2px solid rgb(6, 242, 250);
+}
+.search {
+  position: relative;
+  width: 300px; 
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  
+}
+
+/* DIFFERENT PACKAGE OPTIONS */
+
+  /* STATE SLIDER */
+
+  .end-heading{
+    width:60%;
+    color: #666;
+    border-width: 2px;
+    margin: 5px auto 10px auto;
+  }
+
+
+  .package {
+    
+    text-align: center;
+    align-items: center;
+  }
+  .slide-container {
+    position: relative;
+    max-width: 74%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .package_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 10px;
+
+  }
+  .package_desc img {
+    height: 280px;
+    width: 230px;
+    border-radius: 10px;
+  }
+  .package_desc a{
+    color: black;
+
+  }
+  .package_desc p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .prev, .next {
+    color: rgb(19, 16, 16);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+
+
+/* SUMMON ON CLICK */
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.filters button {
+  
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  
+}
+.filters button.active {
+  
+  /* color: white;  */
+  border-radius: 15px;
+  padding: 5px;
+  border: 2px solid gray;  
+}
+.filters ul {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  justify-content: space-evenly;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.filters ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 15px;
+}
+
+
+
+
+/* QUERY */
+
+.query {
+  /* margin-top: 100px; */
+  max-width: 600px;
+  
+  margin: 40px auto 50px auto;
+  background: rgb(51, 50, 50);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.query p{
+  font-size:20px;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.query h2 {
+  text-align: center;
+  color: rgb(224, 198, 198);
+}
+.query .form-group {
+  margin-bottom: 15px;
+}
+.query label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+.query input[type="text"],
+.query input[type="email"],
+.query input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.query input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.query input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+
+
+
+/* FOOTER */
+
+.footer-content .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+   margin-left: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(68, 64, 64);
+    color:white;
+    margin-top: 40px;
+  }
+  
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20 px;
+    text-align: justify;
+    color: white;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem 0;
+    text-transform: capitalize;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: 0.5rem;
+    
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+    transition: padding 380ms ease-out;
+  }
+  .newsletter{
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    
+  }
+  .newsletter .newsletter_input input{
+    margin-top: 15px;
+      width:250px;
+      padding: 5px 3px;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 13px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      
+  }
+  .newsletter_input button{
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  
+  .footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    
+    border-top: 0.1rem solid rgba(221, 212, 212, 0.692);
+  }
+  
+  .footer .credit span {
+    color: var(--green);
+  }
+  

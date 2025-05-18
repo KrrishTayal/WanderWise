@@ -1,0 +1,554 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  
+    <title>WanderWise</title>
+</head>
+<body>
+    
+    <header>
+
+    <div class="main">
+   
+        <div class="navbar">
+        <nav class="navbar glass" >
+            <span><a href="#home" style="display: flex; align-items: center">
+                <img class="img2" src="images/logo.png" width="70"  >
+                    <h1 class="logo">&nbsp;WanderWise</h1></a></span >
+            <ul class="nav-links" type="none">
+                <li>
+                    <a href="#home" id="pri" class=" active cir_border">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#explore" id="tri" class="cir_border">Explore</a>
+                </li>
+                <li>
+                    <a href="#package" id="quad" class="cir_border">Packages</a>
+                </li>
+                <li><a href="about_us.html" id="quint" class="cir_border">About</a></li>
+                <li><a href="custom.html" id="quint" class="cir_border">Customize</a></li>
+                
+                <li>
+                    <a href="#contact" id="hept" class="cir_border">Contact Us</a>
+                </li>
+                <!-- <li><a href="#Login/SignIn" id="hept" class="cir_border">Login/SignUp</a></li> -->
+                <li>
+                  <a class= "cir-border" href="register.html" id="login-signup-btn">Login/Signup</a>
+                </li>
+                <li  id="welcome-message" style="display: none;">
+                  <a class= "cir_border" href="javascript:void(0);" id="user-welcome-msg"></a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+    </div>
+    </header>
+    <main>
+        <div class="intro">
+            <video src="videos/bgvid.mp4" type="video/mp4" autoplay="" muted="" loop=""></video>
+            <div class="title">
+                <h1>WANDERWISE</h1>
+            <h3><p>See the World for Less! Explore Amazing Destinations with Our Budget-Friendly Packages.  </p></h3>
+            <a href="#" class="primary-btn text-uppercase">Explore Now</a>
+            </div>
+            
+            <div class="wrapper">
+                <form action="#">
+                    <div class="h5 font-weight-bold text-center mb-3" >Search your Destination</div>
+                    <div class="destination">
+                        <label for="city" >Enter your destination</label>
+                      </div>
+                      
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="Enter Your Name">
+                    </div>
+                    <div class="destination">
+                        <label for="city" >Enter your date</label>
+                    </div>
+                    <div class="form-group">
+                        <input autocomplete="off" type="date" class="form-control" placeholder="Select your date">
+                    </div>
+                    <div class="form-group">
+                        <div class="lable_total flex">
+                              <label class="destination"  for="price">Max Price : <span id="result">2500</span> 
+                            </label>
+                        </div>
+                        <input id="mySlider" type="range" min="0" max="10000" value="2500"  style="width: 215px;">
+                        <script>
+                            mySlider.oninput = showSliderValue;
+                            function showSliderValue() {
+                                result.innerText = this.value;
+                            }
+                        </script>
+                    </div>
+                    <a href="" class="button">
+                        <span class="material-symbols-outlined">
+                            <i class="fa-solid fa-person-walking-arrow-right"></i>
+                        </span>
+                    </a>
+                </form>
+            </div>
+
+            
+        </div>
+        <hr class="end-content">
+
+        <section class="portfolio-area section-gap " id="explore">
+            <div class="title text-center">
+                <h3 class="mb-10">You'll fall in love with India</h3>
+                <p>Explore India from Kashmir to Kaniyakumari</p>
+            </div>
+
+            <div class="filters">
+                <ul>
+                  
+                  <li><button class="active" onclick="showGallery('west',this)">West India</button></li>
+                  <li><button onclick="showGallery('south',this)">South India</button></li>
+                  <li><button onclick="showGallery('east',this)">East India</button></li>
+                  <li><button onclick="showGallery('north',this)">North India</button></li>
+                  <li><button onclick="showGallery('central',this)">Central India</button></li>
+                  
+                </ul>
+            </div>
+            
+        </section>
+        
+        <div class="explore-areas">
+            <div id="north" class="state-gallery">
+                <div class="item " id="first" >
+                    <img src="images/homepage/p1.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Punjab</a></h4>
+                      <div class="cat">Amritsar,Wagah Border, Chandigarh and more...</div>
+                    </div>
+                </div>
+                  <div class="item">
+                    <img src="images/homepage/download.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Uttarakhand</a></h4>
+                      <div class="cat">Nainital ,Rishikesh, Haridwar and more...</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/hp.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Himachal Pradesh</a></h4>
+                      <div class="cat">Shimla, Manali, Dharamshala and more...</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/jk.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Jammu & Kashmir</a></h4>
+                      <div class="cat">Srinagr, Gulmarg, Ladakh and more...</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/up.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Uttar Pradesh</a></h4>
+                      <div class="cat">Agra, Varanasi ,Lucknow and more...</div>
+                    </div>
+                  </div>
+            </div>
+            
+            <!-- south -->
+            <div id="south" class="state-gallery">
+                <div class="item " id="first" >
+                    <img src="images/homepage/tn.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Tamil Nadu</a></h4>
+                      <div class="cat">Chennai, Mahabalipuram, Ooty and more..</div>
+                </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/kar.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Karnataka</a></h4>
+                      <div class="cat">Bangalore, Hampi, Coorg and more...</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/ker.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Kerala</a></h4>
+                      <div class="cat">Munnar, Alleppey, Kochi, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/ap.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Andhra Pradesh</a></h4>
+                      <div class="cat">Visakhapatnam, Tirupati, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/tel.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Telangana</a></h4>
+                      <div class="cat">Hyderabad, Warangal and more..</div>
+                    </div>
+                  </div>
+                </div>
+            <!-- central -->
+            <div id="central" class="state-gallery">
+                <div class="item " id="first" >
+                    <img src="images/homepage/j4.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Madhya Pradesh</a></h4>
+                      <div class="cat">Khajuraho, Bhopal, and more..</div>
+                </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/j5.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Chhattisgarh</a></h4>
+                      <div class="cat">agdalpur, Chitrakote Falls, Raipur, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/j6.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Odisha</a></h4>
+                      <div class="cat">Bhubaneswar, Puri, Konark and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/bih.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Bihar</a></h4>
+                      <div class="cat">Bodh Gaya, Nalanda, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/jhar.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Jharkhand:</a></h4>
+                      <div class="cat">Ranchi, Deoghar, Jamshedpur and more..</div>
+                    </div>
+                  </div>
+                </div>
+            <!-- east -->
+            <div id="east" class="state-gallery">
+                <div class="item " id="first" >
+                    <img src="images/homepage/sik.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Sikkim</a></h4>
+                      <div class="cat">Gangtok, Tsomgo Lake and more..</div>
+                </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/wb.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">West Bengal</a></h4>
+                      <div class="cat">Kolkata, Darjeeling, Sundarbans, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/assam.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Assam</a></h4>
+                      <div class="cat">Kaziranga National Park, Guwahati, Majuli, and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/megh.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Meghalaya</a></h4>
+                      <div class="cat">Shillong, Cherrapunji, Mawlynnong and more..</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/homepage/mizo.jpg" alt="Work 1">
+                    <div class="p-inner">
+                      <h4><a href="">Mizoram</a></h4>
+                      <div class="cat">Aizawl, Lunglei, Champhai and more..</div>
+                    </div>
+                  </div>
+                </div>
+            <!-- west -->
+           
+      
+        </div>
+        
+
+
+        <!-- PACKAGES -->
+        <hr class="end-content">
+        <section class="package" id="package">
+            <div class="package-title">
+                <h2>Packages</h2>
+            </div>
+    
+            <div class="package-content">
+                <div class="text-block">
+                    <h3>Best Selling Destinations</h3>
+                </div>
+                
+                <div class="package-link">
+                
+                <a href="">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homepage/p3.jpg" alt="">
+                            <h3>Odisha-:Starting at Rs.9,999</h3>                            
+                            
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="rajasthan-tour-package.html">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homepage/p4.jpg" alt="">
+                            <h3>Rajasthan-:Starting at Rs.30,000</h3>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homepage/pac1.jpeg" alt="">
+                            <h3>Uttarakhand-:Starting at Rs.37,700/-</h3>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homepage/p11.jpg" alt="">
+                            <h3>Goa-:Starting at Rs.47,500/-</h3>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homepage/p6.jpg" alt="">
+                            <h3>Odisha:-Starting at Rs.58,500/-</h3>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="box">
+                        <div class="image">
+                        <img src="images/homepage/p7.jpg" alt="">
+                            <h3>Kerala-:Starting at Rs.59,500/-</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            </div>
+            <div class="explore-more" style="text-align:center">
+                <button type="button" class="btn btn-primary"> <a href="package.html">Explore More</a></button>
+            </div>
+        </section>
+        
+        <hr class="end-content">
+    <!-- THEMES YOU CAN EXPLORE -->
+    <section class="package themes" id="themes">
+        <div class="package-title themes">
+            <h2>THEMES YOU CAN EXPLORE</h2>
+        </div>
+
+        <div class="package-content">
+            <a href="">
+            
+                    <div class="image">
+                        <img src="images/homepage/p3.jpg" alt="">
+                        <h3>Aventure</h3>
+                    </div>
+                
+            </a>
+            <a href="themes_explore.html">
+            
+                    <div class="image">
+                        <img src="images/homepage/p3.jpg" alt="">
+                        <h3>Religious</h3>
+                    </div>
+            
+            </a>
+
+            <a href="">
+            
+                    <div class="image">
+                        <img src="images/homepage/p4.jpg" alt="">
+                        <h3>Heritage</h3>
+                    </div>
+                
+            </a>
+
+            <a href="">
+                
+                    <div class="image">
+                        <img src="images/homepage/pac1.jpeg" alt="">
+                        <h3>Hill Stations</h3>
+                    </div>
+                
+            </a>
+
+            <a href="">
+                
+                    <div class="image">
+                        <img src="images/homepage/pac1.jpg" alt="">
+                        <h3>Beaches & Lands</h3>
+                    </div>
+                
+            </a>
+
+            
+
+           
+        
+        
+        </div>
+        
+    </section>
+
+    <hr class="end-content">
+    <!-- CUSTOMIZABLE SECTION -->
+    <section class="help-section">
+        <div class="help-container">
+            <div class="help-text">
+                <h2>Confused About Your Next Adventure?</h2>
+                <p>Let us guide you! Whether you're unsure about destinations, activities, or want a tailor-made trip, we’ve got you covered.</p>
+            </div>
+    
+            <!-- Interactive Card -->
+            <div class="interactive-card">
+                <div class="card-content">
+                    <h3>Create Your Perfect Journey</h3>
+                    <p>Click to explore our customized solutions for your perfect trip. Make your dream vacation come true!</p>
+                    <!-- Button to redirect -->
+                    <a href="custom.html" class="cta-button">Start My Adventure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        
+    </main>
+    
+    <section class="contact-us" id="contact">
+        
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below.</p>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Query/Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        <div class="send">
+            <img src="videos/sending.gif" alt="">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <hr class="end-content">
+    <footer class="footer-content footer">
+        <div class="box-container">
+            <div class="box">
+                <p><h3>WanderWise </h3>  </p>
+                <p><i class="fa-solid fa-location-dot"></i> abc abc abc , India</p>
+                <p><i class="fa-solid fa-phone"></i> 0863 -222000</p>
+                <p><i class="fa-solid fa-envelope"></i> support@wanderwise.com</p>
+                <div class="newsletter">
+                    <h3>News Letter</h3>
+                    <div class="newsletter_text">
+                      Subscribe to get our Latest Updates and Newsletters.
+                    </div>
+                    <form class="newsletter_input">
+                      <input type="text" placeholder="example@domine.com">
+                      <button ><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+                <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+                <a href="#about"> <i class="fas fa-chevron-right"></i> About </a>
+                <a href="#tourist information"> <i class="fas fa-chevron-right"></i> Places </a>
+                <a href="#to-do"> <i class="fas fa-chevron-right"></i> To-do </a>
+                <a href="#contact us"> <i class="fas fa-chevron-right"></i> Contact us </a>
+            </div>
+    
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:+94 761442341"> <i class="fas fa-phone"></i> +94 761442341 </a>
+                <a href="tel:+94 112246167"> <i class="fas fa-phone"></i> +94 112246167 </a>
+                <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> abc@gmail </a>
+                <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> avx@gmail </a>
+                
+            </div>
+    
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/"target=-blank> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="https://www.twitter.com/"target=-blank> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="https://www.instagram.com/"target=-blank> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="https://www.linkedin.com/"target=-blank> <i class="fab fa-linkedin"></i> LinkedIn </a>
+                <a href="https://www.pinterest.com/"target=-blank> <i class="fab fa-pinterest"></i> Pinterest </a>
+            </div>
+    
+        </div>
+    
+        <div class="credit">
+            Created by <span>Krrish Tayal</span> | All Rights Reserved!
+        </div>
+      </footer>
+      <script src="javascript/copy.js"></script>
+
+      <script>
+    // Check if the user is logged in
+    const userName = localStorage.getItem('userName'); // Get the user name from localStorage
+
+    if (userName) {
+      // Update navbar if user is logged in
+      document.getElementById("login-signup-btn").style.display = "none"; // Hide login/signup button
+      document.getElementById("welcome-message").style.display = "block"; // Show welcome message
+      document.getElementById("user-welcome-msg").innerText = `Welcome, ${userName}`; // Display username
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>
